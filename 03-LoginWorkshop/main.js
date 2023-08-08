@@ -1,6 +1,6 @@
 let user = prompt("user");
 let password
-if (user !== "codecamp") {
+if (user===null||user ===""||user.trim() ==="" || isNaN(user)) {
     user = "guest";
     alert(user)
 }
